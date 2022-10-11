@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "style.css" rel = "stylesheet">
+    <script src="main.js"></script>
+    <title>self assessment</title>
+</head>
+
+<body style="width:100vw;">
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                <img src="images/gaoxiang's logo2.png">
+            </div>
+            <div>
+                <h1>Gaoxiang Zhang <br>
+                    CS5610 Web-Dev
+                </h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <a href="">Home</a>
+                    <a href="#Tags">Tags</a>
+                    <a href="#SEO">SEO</a>
+                    <a href="#Grid">Grid</a>
+                    <a href="Box"></a>
+                    <a href="Font"></a>
+                    <a href="Position"></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id = "Tags">
+        <h1>Q1: Section For Tags</h1>
+        <p>10 most useful tags for me: <br>
+            Requirment:provide a list of the 10 most <br>
+            useful tags (e.g. div) for you in HTML</p> 
+        <ul>
+            <li>div</li>
+            <li>h1</li>
+            <li>br</li>
+            <li>nav</li>
+            <li>ul</li>
+            <li>li</li>
+            <li>header</li>
+            <li>body</li>
+            <li>footer</li>
+            <li>a</li>
+        </ul>
+    </section>
+    <section id = "SEO">
+        <h1>Q2: Section For SEO</h1> 
+        <p>Research about SEO and provide a list of some of the <br>
+            most important header tags that you should add to <br>
+            your pages for SEO</p>
+
+    </section>
+    <section id = "Grid">
+        <h1>Q3: Section For Grid</h1>
+        <p> Requirment:In the page create a grid of 3x3 like layout without <br>
+            using table, or any css. Just use divs and spans</p>
+        <!-- <div class="grid"> <span><div class="grid"></div></span><div class="grid"></div></span></div>
+        <div class="grid"> <span><div class="grid"></div></span><div class="grid"></div></span></div>
+        <div class="grid"> <span><div class="grid"></div></span><div class="grid"></div></span></div> -->
+        <!-- <div class="grid"></div>
+        <div class="grid"></div> -->
+        <div>|------<span>|</span>------<span>|</span>------<span>|</span></div>
+        <div>|------<span>|</span>------<span>|</span>------<span>|</span></div>
+        <div>|------<span>|</span>------<span>|</span>------<span>|</span></div>
+        <div>|------<span>|</span>------<span>|</span>------<span>|</span></div>
+    </section>
+
+    <section id="Box">
+        <h1>Q4: Section for Box</h1>
+        <p> a gallery that showcases the options for the box model using css <br>
+          For each row change the values of border, margin and padding. <br>
+          For the columns try three different values (e.g. 0px 5px 10px)</p>
+        <div class="row" style="display:flex">
+            <div class="box1"> This is box1, green color
+                <div class="box2"> This is box2,with bottom margin 100px, sam width with box 1, color yellow
+                </div>
+                <div class="box3"> This is box3, same width with box 1, color red
+                </div>
+            </div>
+            <div class="box4"> This is box1, green color
+                This is the box4, have margin 10px, and the boder-box is used
+            </div>
+            <div class="box5">
+                This is the box5, with padding left&right = 50px, top/bottom = 40px
+            </div>
+            <div class="box6">
+                This is the box6, with padding left&right = 50px, top/bottom = 100px
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="Font" style="font-size: 15px;">
+        <h1>Q5: Section for font sizes</h1>
+        <p>Create an itemized list with the same text and 6 different <br> 
+            font sizes, use inline styling. Choose a combination of <br>
+            absolute and relative sizesLinks to  Explain on each item <br>
+            when would you use that unit by means of an example</p>
+        <h2 style="font-size: 15px;">This one use absulate position px, we use that when we need <br>
+                the text keep the font whenever the screen get bigger or smaller, <br>
+                and it is fixed centimeter</h2>
+        <h2 style="font-size: 1cm;">This one use absulate position cm, we use that when we need <br>
+            the text keep the font whenever the screen get bigger or smaller, <br>
+            and it is fixed pixel </h2>
+        <h2 style="font-size: 2vh">This one use relative position vh, we use that when we need <br>
+            the text change the font when the screen get bigger or smaller, <br>
+            and it is realtive with the viewport's height</h2>
+        <h2 style="font-size:2vw">This one use relative position vw, we use that when we need <br>
+            the text change the font when the screen get bigger or smaller, <br>
+            and it is realtive with the viewport's width</h2>
+        <h2 style="font-size: 1em;">This one use relative position em, when we use this one, <br>
+            the font will be as n times as parents' font. n stand for the number we put <br>
+            before em sign.</h2>
+        <h2 style="font-size:3vmin">This one use relative position vmin, we use that when we need <br>
+            the text is relative with the viewport's smaller dimension, the number is the <br>
+            persentage of the smaller dimension.</h2>
+    </section>
+
+    <section id="Position" style="width:100vw;">
+        <h1>Q6: Section for positioning</h1>
+        <p> Add a creative part of the page that uses 4 different positioning <br>
+            options. Try to think and explain when would you use these options. <br>
+             Use that positioning to make sure that your footer stays on the <br>
+             bottom of the screen</p>
+        <div style="position:static; background-color:blue; left: 10px; 
+        top:10px; width:70vh;color:aliceblue;font-size: 3vh;">
+            This is static div, this div is not moveable, and can not set the left/top for it, <br>
+            it always move with the flow of the entire page elements.         
+        </div>
+        <div style="position: relative; background-color:green; width:15vw; height:15vw; color:aliceblue;
+            font-size: 1vh; top:20px;  left:30px;">
+                This is relative div. Ralative postion is setable for the left/top/bottom/right, <br>
+                and it move with the flow of the entire page. Besides that, absolute can set <br>
+                left/top/bottom/right in Ralative.
+            <div style="position: absolute; background-color:red; width: 10vw; height:10vw; color:aliceblue;
+                bottom:1px; right:1px; font-size: 1vh;"> 
+                This is absolute div, it can be set left/top/right/bottom, and those attributes <br>
+                will effect the postion for this div, related to the parents container. It's postion only related <br>
+                with it's parents' container.
+            </div>
+        </div>
+        <div style="position:fixed; bottom: 30vh; right: 10vh;"> 
+            <h1>This is fixed div</h1>
+            <img src="images/advertize.png" style="height:30vh; width:30vw;">
+        </div>
+        
+    </section>
+
+    <footer id = "Footer" style="position:sticky; bottom:0vh; width: 100vw; height:10vh; 
+                background-color: rgb(62, 190, 195); ">
+        <h2 style="color:yellow; text-align:center">In footer, I use postion sticky to make the footer stays on the <br>
+        bottom of the screen no matter the page move or not.</h2>
+    </footer>
+</body>
+</html>
